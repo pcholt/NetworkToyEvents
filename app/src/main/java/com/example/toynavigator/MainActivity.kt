@@ -1,23 +1,18 @@
 package com.example.toynavigator
 
-import android.content.Context
 import android.os.Bundle
-import android.telephony.PhoneStateListener
-import android.telephony.SignalStrength
-import android.telephony.TelephonyManager
 import android.view.Menu
-import com.google.android.material.snackbar.Snackbar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import com.example.toynavigator.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    private val REQUEXT =1
     private lateinit var appBarConfiguration: AppBarConfiguration
     private val binding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
@@ -28,7 +23,6 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
         setSupportActionBar(binding.appBarMain.toolbar)
-        val k: Toolbar = binding.appBarMain.toolbar
 
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.

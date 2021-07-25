@@ -7,4 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="strength">#850900</color>
+    <color name="locationChange">#135700</color>
+    <color name="strength_change">#81009E</color>
 </resources>
